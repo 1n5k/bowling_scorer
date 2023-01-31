@@ -1,4 +1,4 @@
-import Flame from '../src/flame'
+import Flame from "../src/flame";
 
 describe("Flame クラス",() => {
     const flame = new Flame([]);
@@ -10,7 +10,7 @@ describe("Flame クラス",() => {
             });
     
             it("1投目に10本倒すのはスペアではない", () => {
-                flame.rolls = [10, 0]
+                flame.rolls = [10, 0];
                 expect(flame.isSpare()).toBe(false);
             });
 
@@ -18,7 +18,7 @@ describe("Flame クラス",() => {
                 flame.rolls = [5, 5];
                 expect(flame.isSpare()).toBe(true);
             });
-        })
+        });
 
         describe("異常系", () => {
             it("2投で10本以上倒すのはスペアではない", () => {

@@ -1,7 +1,7 @@
-import message from '../src'
+import message from "../src";
 
-test('check message value', () => {
-  expect(message).toBe('HelloWorld');
+test("check message value", () => {
+  expect(message).toBe("HelloWorld");
 });
 
 
