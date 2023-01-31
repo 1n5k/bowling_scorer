@@ -12,6 +12,11 @@ yarn install
 ```bash
 yarn test
 ```
+## Lint
+```bash
+yarn lint
+yarn lint:fix
+```
 
 ## Console
 ```bash
