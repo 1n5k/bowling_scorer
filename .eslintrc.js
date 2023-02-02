@@ -17,7 +17,6 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   rules: {
-    "no-console": "error",
     semi: ["error", "always"],
     "@typescript-eslint/quotes": ["error", "double"]
   }
