@@ -4,7 +4,7 @@
 
 ## インストール 
 ```bash
-yarn install
+$ yarn install
 ```
 
 ## Docker 
@@ -15,17 +15,17 @@ docker compose run --rm app yarn {COMMAND}
 
 ## テスト
 ```bash
-yarn test
+$ yarn test
 ```
 ## Lint
 ```bash
-yarn lint
-yarn lint:fix
+$ yarn lint
+$ yarn lint:fix
 ```
 
 ## コンソール呼び出し
 ```bash
-yarn ts-node
+$ yarn ts-node
 ```
 
 ## 入力例
@@ -34,10 +34,11 @@ yarn ts-node
 - スペア => [3, 7], [9, 1]
 - ガター => [0, 4], [5, 0], [0, 0]
 
-## コンソール上でスコア計算する場合
-```bash
-yarn ts-node
-> import Game from './src/game'
-> let game = new Game([[2,3], [2,3]]);
-> game.calculate();
+```
+$ yarn ts-node
+> import Game from './src/game';
+> let game = new Game([[10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 10, 10]]);
+> game.calclate();
+Scores are 30, 60, 90, 120, 150, 180, 210, 240, 270, 300
+Total score is 300
 ```
