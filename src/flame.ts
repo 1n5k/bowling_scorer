@@ -18,4 +18,8 @@ export default class Flame implements _Flame {
     isStrike(): boolean {
         return this.rolls[0] === 10;
     }
+
+    sumBySecondRolls(): number {
+        return this.rolls[0] + this.rolls[1];
+    }
 }

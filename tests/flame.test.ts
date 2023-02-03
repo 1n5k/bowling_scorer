@@ -49,4 +49,18 @@ describe("Flame クラス",() => {
             });
         });
     });
+
+    describe("sumBySecondRolls()", () => {
+        describe("正常系", () => {
+            it("パターン1", () => {
+                flame.rolls = [2, 3];
+                expect(flame.sumBySecondRolls()).toBe(5);
+            });
+
+            it("パターン2", () => {
+                flame.rolls = [10, 0];
+                expect(flame.sumBySecondRolls()).toBe(10);
+            });
+        });
+    });
 });
